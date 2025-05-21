@@ -1,5 +1,6 @@
 package com.usaid.quizzapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -21,12 +22,17 @@ class ResultsActivity : AppCompatActivity() {
         //Code goes here
         val tvScore = findViewById<TextView>(R.id.Score)
         val btnExit = findViewById<Button>(R.id.btnexit)
+        val btnReview = findViewById<Button>(R.id.btnReview)
         //code logic
         //get the score from the intent
         val score = intent.getIntExtra("score", 0)
         //display the score in the textview
         btnExit.setOnClickListener {
             finish()
+        }
+        btnReview.setOnClickListener{
+            val Intent = Intent(this, ReviewActivity::class.java)
+            startActivity(Intent)
         }
     }//end of onCreate
 }//end of ResultActivity
