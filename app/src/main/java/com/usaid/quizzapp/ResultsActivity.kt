@@ -27,6 +27,7 @@ class ResultsActivity : AppCompatActivity() {
         //get the score from the intent
         val score = intent.getIntExtra("score", 0)
         //display the score in the textview
+        tvScore.text = "$score"
         btnExit.setOnClickListener {
             finish()
         }

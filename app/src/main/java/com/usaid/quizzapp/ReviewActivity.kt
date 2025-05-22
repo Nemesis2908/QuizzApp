@@ -1,5 +1,6 @@
 package com.usaid.quizzapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -35,5 +36,19 @@ class ReviewActivity : AppCompatActivity() {
             "True",
             "False",
             "True")
+        var counter = 0
+        questions.text = hisQuestions[counter]
+        correctAnswers.text = correctAnswer[counter]
+        btnNext.setOnClickListener {
+            if (counter < 5) {
+                counter++
+                questions.text = hisQuestions[counter]
+                correctAnswers.text = correctAnswer[counter]
+            }else{
+                val intent = Intent(this, ResultsActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
     }//end od onCreate
 }//end of ReviewActivity
