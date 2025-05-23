@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#1D1818"
+        android:background="#1F1919"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
             android:layout_marginEnd="30dp"
             android:fontFamily="monospace"
             android:text="Question:"
-            android:textColor="#EFE7E7"
+            android:textColor="#FAF6F6"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="True"
-                android:textColor="#E6E3E3"
+                android:textColor="#FAF6F6"
                 android:textSize="34sp" />
 
             <RadioButton
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="False"
-                android:textColor="#D7D5D5"
+                android:textColor="#FAF6F6"
                 android:textSize="34sp" />
 
         </RadioGroup>

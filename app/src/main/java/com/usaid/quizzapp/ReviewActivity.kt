@@ -23,6 +23,7 @@ class ReviewActivity : AppCompatActivity() {
         val questions = findViewById<TextView>(R.id.edtQuestionReview)
         val correctAnswers = findViewById<TextView>(R.id.edtAnswercorrect)
         val btnNext = findViewById<Button>(R.id.btnreviewNext)
+        val btnBack = findViewById<Button>(R.id.btnback)
 
         val hisQuestions = arrayOf(
             "Rome is known as the eternal city",
@@ -44,10 +45,10 @@ class ReviewActivity : AppCompatActivity() {
                 counter++
                 questions.text = hisQuestions[counter]
                 correctAnswers.text = correctAnswer[counter]
-            }else{
-                val intent = Intent(this, ResultsActivity::class.java)
-                startActivity(intent)
-                finish()
+            }
+            btnBack.setOnClickListener {
+                val Intent = Intent(this, ResultsActivity::class.java)
+                startActivity(Intent)
             }
         }
     }//end od onCreate

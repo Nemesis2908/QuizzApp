@@ -29,7 +29,8 @@ class ResultsActivity : AppCompatActivity() {
         //display the score in the textview
         tvScore.text = "$score"
         btnExit.setOnClickListener {
-            finish()
+            val Intent = Intent(this, MainActivity::class.java)
+            startActivity(Intent)
         }
         btnReview.setOnClickListener{
             val Intent = Intent(this, ReviewActivity::class.java)

@@ -40,7 +40,7 @@
             android:layout_marginEnd="30dp"
             android:text="This is the Quizz app. Here we will test your knowledge. Press start to start."
             android:textAlignment="center"
-            android:textColor="#D3CDCD"
+            android:textColor="#FAF6F6"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
